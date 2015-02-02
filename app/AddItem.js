@@ -22,7 +22,7 @@ var AddItem = React.createClass({
   render: function(){
     return (
       <div>
-        <input type="text" value={this.state.newItem} placeholder="New Item" onKeyDown={this.handleSubmit} onChange={this.handleChange} />
+        <input type="text" className="form-control" value={this.state.newItem} placeholder="New Item" onKeyDown={this.handleSubmit} onChange={this.handleChange} />
       </div>
     )
   }

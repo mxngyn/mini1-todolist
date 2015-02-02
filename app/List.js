@@ -2,11 +2,11 @@ var React = require('react');
 
 var List = React.createClass({
   render: function(){
-    var listItems = this.props.items.map(function(item){
+    var listItems = this.props.items.map(function(item, index){
       return (
-        <li> {item} </li>
+        <li key={index}> <span className="glyphicon glyphicon-remove" onClick={this.props.remove.bind(null, index)}></span>{item} </li>
       )
-    });
+    }.bind(this));
     return (
       <ul>
         {listItems}
