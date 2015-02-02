@@ -7,5 +7,12 @@
     "type": "git",
     "url": "https://github.com/DevMountain/reactweek-mini1-todolist"
   },
-  "author": "Tyler McGinnis"
+  "author": "Tyler McGinnis",
+  "dependencies": {
+    "react": "^0.12.2"
+  },
+  "devDependencies": {
+    "jsx-loader": "^0.12.2",
+    "webpack": "^1.5.3"
+  }
 }
