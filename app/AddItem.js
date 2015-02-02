@@ -11,17 +11,18 @@ var AddItem = React.createClass({
       newItem: e.target.value
     })
   },
-  handleSubmit: function(){
-    this.props.add(this.state.newItem);
-    this.setState({
-      newItem: ''
-    });
+  handleSubmit: function(e){
+    if(e.keyCode === 13){
+      this.props.add(this.state.newItem);
+      this.setState({
+        newItem: ''
+      });
+    }
   },
   render: function(){
     return (
       <div>
-        <input type="text" value={this.state.newItem} placeholder="New Item" onChange={this.handleChange} />
-        <button onClick={this.handleSubmit}>Add Item</button>
+        <input type="text" value={this.state.newItem} placeholder="New Item" onKeyDown={this.handleSubmit} onChange={this.handleChange} />
       </div>
     )
   }
