@@ -5,7 +5,7 @@ var List = require('./List');
 var App = React.createClass({
   getInitialState: function(){
     return {
-      list: ['one', 'two', 'three']
+      list: []
     }
   },
   handleAddItem: function(newItem){
