@@ -2,7 +2,7 @@ var React = require('react');
 var AddItem = require('./AddItem');
 var List = require('./List');
 
-var App = React.createClass({
+var ListContainer = React.createClass({
   getInitialState: function(){
     return {
       list: []
@@ -36,7 +36,4 @@ var App = React.createClass({
   }
 });
 
-React.render(
-  <App />,
-  document.getElementById('app')
-)
+module.exports = ListContainer;
