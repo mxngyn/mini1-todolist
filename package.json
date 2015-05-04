@@ -1,0 +1,26 @@
+{
+  "name": "mini-todo",
+  "version": "1.0.0",
+  "description": "A mini todo list using ReactJS",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mxngyn/mini1-todolist.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mxngyn/mini1-todolist/issues"
+  },
+  "homepage": "https://github.com/mxngyn/mini1-todolist",
+  "dependencies": {
+    "react": "^0.13.2"
+  },
+  "devDependencies": {
+    "jsx-loader": "^0.13.2",
+    "webpack": "^1.8.11"
+  }
+}
